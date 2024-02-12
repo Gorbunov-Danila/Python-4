@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import math
 
 def calculate_angle(hour, minute):
@@ -29,11 +32,12 @@ def calculate_angle(hour, minute):
 
     return angle_between, full_hours, full_minutes
 
-# Пример использования функции
-hour_input = int(input("Введите текущий час (от 1 до 12): "))
-minute_input = int(input("Введите текущую минуту (от 0 до 59): "))
+if __name__ == "__main__":
+    # Пример использования функции
+    hour_input = int(input("Введите текущий час (от 1 до 12): "))
+    minute_input = int(input("Введите текущую минуту (от 0 до 59): "))
 
-angle, full_hours, full_minutes = calculate_angle(hour_input, minute_input)
-print(f"Угол между часовой и минутной стрелками: {angle} градусов")
-print(f"Количество полных часов: {full_hours}")
-print(f"Количество полных минут: {full_minutes}")
+    angle, full_hours, full_minutes = calculate_angle(hour_input, minute_input)
+    print(f"Угол между часовой и минутной стрелками: {angle} градусов")
+    print(f"Количество полных часов: {full_hours}")
+    print(f"Количество полных минут: {full_minutes}")
